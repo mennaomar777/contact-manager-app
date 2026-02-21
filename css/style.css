@@ -1,0 +1,489 @@
+:root {
+  --main-color: linear-gradient(
+    to bottom right,
+    oklch(54.1% 0.281 293.009),
+    oklch(51.1% 0.262 276.966)
+  );
+  --color-blue-100: oklch(93.2% 0.032 255.585);
+  --color-blue-500: oklch(62.3% 0.214 259.815);
+  --color-blue-600: oklch(54.6% 0.245 262.881);
+  --color-amber-400: oklch(82.8% 0.189 84.429);
+  --color-orange-500: oklch(70.5% 0.213 47.604);
+  --color-rose-50: oklch(96.9% 0.015 12.422);
+  --color-rose-100: oklch(94.1% 0.03 12.58);
+  --color-rose-500: oklch(64.5% 0.246 16.439);
+  --color-red-600: oklch(57.7% 0.245 27.325);
+  --color-violet-50: oklch(96.9% 0.016 293.756);
+  --color-violet-100: oklch(94.3% 0.029 294.588);
+  --color-violet-600: oklch(54.1% 0.281 293.009);
+  --color-emerald-50: oklch(97.9% 0.021 166.113);
+  --color-emerald-100: oklch(95% 0.052 163.051);
+  --color-emerald-600: oklch(59.6% 0.145 163.225);
+  --color-amber-50: oklch(98.7% 0.022 95.277);
+  --color-amber-100: oklch(96.2% 0.059 95.617);
+  --color-amber-400: oklch(82.8% 0.189 84.429);
+  --color-gray-500: oklch(55.1% 0.027 264.364);
+  --card-color: linear-gradient(
+    to bottom right,
+    var(--color-rose-500),
+    oklch(59.2% 0.249 0.584)
+  );
+}
+section {
+  margin-top: 3rem;
+  padding-top: 4.5rem;
+}
+.logo-icon,
+.card-icon {
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.7rem;
+}
+.logo-icon {
+  background-image: var(--main-color);
+  box-shadow: 0 3px 7px 0px oklch(60.056% 0.24259 293.89 / 0.301);
+}
+.logo-icon i,
+.card-icon i {
+  font-size: 1.15rem;
+}
+.navbar-brand {
+  font-size: 1.5rem;
+}
+.navbar-brand span {
+  color: oklch(54.1% 0.281 293.009);
+}
+.logo-text p {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+.nav-link {
+  border-radius: 0.5rem;
+  transition: all 0.1s linear;
+}
+.nav-link:hover {
+  background-color: rgba(228, 225, 225, 0.34);
+}
+.nav-link i {
+  padding: 0.3rem;
+}
+.avatar-container {
+  width: 40px;
+  border-radius: 0.7rem;
+}
+.avatar-container img {
+  border-radius: 0.7rem;
+  border: solid 1.5px rgba(213, 211, 211, 0.242);
+}
+nav .btn {
+  background-image: var(--main-color);
+  border-radius: 0.7rem;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.1s linear;
+}
+nav .btn:hover {
+  transform: translateY(-0.17rem);
+  box-shadow: 0 5px 15px 0px oklch(60.056% 0.24259 293.89 / 0.27);
+}
+/* cards */
+.card-heading {
+  font-size: 0.8rem;
+}
+.card-icon.users {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--color-blue-500),
+    var(--color-blue-600)
+  );
+  box-shadow: 0 3px 7px 0px oklch(62.212% 0.20286 267.329 / 0.301);
+}
+.card-icon.star {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--color-amber-400),
+    var(--color-orange-500)
+  );
+  box-shadow: 0 3px 7px 0px oklch(86.092% 0.14635 83.536 / 0.301);
+}
+.card-icon.heartbeat {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--color-rose-500),
+    var(--color-red-600)
+  );
+  box-shadow: 0 3px 7px 0px oklch(68.701% 0.20211 26.879 / 0.301);
+}
+.total-card,
+.favorites-card,
+.emergency-card {
+  border: solid 1px rgba(222, 219, 219, 0.372) !important;
+  transition: all 0.1s linear;
+}
+.total-card:hover,
+.favorites-card:hover,
+.emergency-card:hover {
+  box-shadow: 0 5px 4px 0 rgba(183, 181, 181, 0.347) !important;
+}
+/* main content */
+input {
+  border: solid 0.5px rgba(201, 200, 200, 0.6);
+}
+input:focus {
+  border: 0.5px solid oklch(54.1% 0.281 293.009);
+  box-shadow: 0 0 0 0.15rem oklch(76.605% 0.14521 302.444 / 0.475);
+}
+
+.icon-container.small-blue-phone,
+.icon-container.small-email,
+.icon-container.small-location {
+  font-size: 0.6rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.35rem;
+}
+.icon-container.small-blue-phone,
+.group-container {
+  background-color: var(--color-blue-100);
+  color: var(--color-blue-600);
+}
+.ph-num {
+  font-size: 0.9rem;
+}
+.icon-container.small-email {
+  color: var(--color-violet-600);
+  background-color: var(--color-violet-100);
+}
+.icon-container.small-location {
+  color: var(--color-emerald-600);
+  background-color: var(--color-emerald-100);
+}
+.badges .group-container,
+.badges .emergency-container {
+  width: fit-content;
+  font-size: 0.75rem;
+  border-radius: 0.35rem;
+}
+.badges .emergency-container {
+  background-color: var(--color-rose-50);
+}
+.card-footer .green-phone,
+.card-footer .envelope,
+.card-footer .star,
+.card-footer .heartbeat,
+.card-footer .pen,
+.card-footer .trash,
+.favourites-green-phone,
+.favourites-red-phone {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.35rem;
+  cursor: pointer;
+  font-size: 0.97rem;
+}
+.card-footer .green-phone {
+  background-color: var(--color-emerald-50);
+  color: var(--color-emerald-600);
+  transition: all 0.1s linear;
+}
+.favourites-green-phone {
+  background-color: var(--color-emerald-100);
+  color: var(--color-emerald-600);
+  transition: all 0.1s linear;
+}
+.favourites-green-phone:hover {
+  background-color: var(--color-emerald-600);
+  color: white;
+}
+.card-footer .green-phone:hover {
+  background-color: var(--color-emerald-100);
+}
+.card-footer .envelope {
+  background-color: var(--color-violet-50);
+  color: var(--color-violet-600);
+  transition: all 0.1s linear;
+}
+.card-footer .envelope:hover {
+  background-color: var(--color-violet-100);
+}
+.card-footer .star,
+.card-footer .heartbeat {
+  color: var(--color-gray-500);
+  transition: all 0.1s linear;
+}
+.card-footer .heartbeat:hover {
+  color: var(--color-rose-500);
+  background-color: rgba(223, 220, 220, 0.24);
+}
+.card-footer .star.active {
+  background-color: var(--color-amber-50);
+  color: var(--color-amber-400);
+  transition: all 0.1s linear;
+}
+.card-footer .star:hover {
+  color: var(--color-amber-400);
+  background-color: rgba(223, 220, 220, 0.24);
+}
+.card-footer .star.active:hover {
+  background-color: var(--color-amber-100);
+}
+
+.card-footer .heartbeat.active {
+  background-color: var(--color-rose-50);
+  color: var(--color-rose-500);
+  transition: all 0.1s linear;
+}
+.card-footer .heartbeat.active:hover {
+  background-color: var(--color-rose-100);
+}
+.card-footer .pen {
+  color: var(--color-gray-500);
+  transition: all 0.1s linear;
+}
+.card-footer .pen:hover {
+  background-color: var(--color-blue-100);
+  color: var(--color-blue-600);
+}
+.card-footer .trash {
+  color: var(--color-gray-500);
+  transition: all 0.1s linear;
+}
+.card-footer .trash:hover {
+  background-color: var(--color-rose-50);
+  color: black;
+}
+.name-icon,
+.favourites-name-icon {
+  background-image: var(--card-color);
+  border-radius: 10px;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+}
+.name-icon.favorite-icon::before {
+  content: "\f005";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  right: -6px;
+  top: -6px;
+  background-color: var(--color-amber-400);
+  border: 1.5px solid white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 7px;
+  font-size: 8px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.name-icon.emergency-icon::after {
+  content: "\f21e";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  background-color: var(--color-rose-500);
+  padding: 7px;
+  font-size: 8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  right: -6px;
+  bottom: -6px;
+  border: 1.5px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
+}
+.card-photo {
+  width: 3.3rem;
+  height: 3.3rem;
+}
+.small-card-img {
+  width: 2.7rem;
+  height: 2.7rem;
+}
+.part-1 h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.part-1 p {
+  font-size: 0.8rem;
+}
+.favourites-name-icon {
+  padding: 0.3125rem;
+}
+.favourites-list-header {
+  background-color: var(--color-amber-50);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.favorites-card {
+  border-radius: 0.8rem;
+}
+.favorites-card:hover {
+  box-shadow: none;
+}
+.favourite-person,
+.favourite-person .favourites-green-phone,
+.favourites-red-phone,
+.emergency-person {
+  transition: all 0.1s linear;
+  cursor: pointer;
+}
+.favourite-person:hover {
+  background-color: var(--color-amber-50) !important;
+}
+
+.favourite-person:hover .favourites-green-phone {
+  background-color: var(--color-emerald-600);
+  color: white;
+}
+.favourites-red-phone {
+  background-color: var(--color-rose-100);
+  transition: all 0.1s linear;
+}
+.favourite-person:hover .favourites-red-phone,
+.emergency-person:hover .favourites-red-phone {
+  background-color: var(--color-red-600);
+  color: white;
+}
+.emergency-list-header {
+  background-color: var(--color-rose-50);
+  border-radius: 4px;
+}
+.emergency-person:hover {
+  background-color: var(--color-rose-50) !important;
+}
+.card-footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #eee;
+}
+
+/* Modal */
+#addContactModal .modal-content {
+  border-radius: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding-block: 0.5rem;
+}
+
+#addContactModal .modal-header {
+  border-bottom: solid 1px rgba(182, 175, 175, 0.155);
+  padding-bottom: 1rem;
+}
+
+#addContactModal .modal-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+#addContactModal .form-group {
+  margin-bottom: 1rem;
+  padding-inline: 1rem;
+}
+
+#addContactModal .form-control {
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  transition: border 0.2s;
+  background-color: #e4eaf131;
+}
+
+#addContactModal .form-control:focus {
+  border: 0.5px solid oklch(54.1% 0.281 293.009);
+  box-shadow: 0 0 0 0.15rem oklch(76.605% 0.14521 302.444 / 0.475);
+}
+
+#addContactModal .alert {
+  font-size: 0.85rem;
+}
+
+/* contact photo */
+.contact-photo-section {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contact-photo-preview {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  background-image: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.5rem;
+  font-size: 2rem;
+  color: #e9ecef;
+  position: relative;
+}
+
+#changePhotoBtn {
+  font-size: 0.96rem;
+  padding: 0.3rem 0;
+  background-color: #bdc3ca34;
+}
+#changePhotoBtn i {
+  color: #70757b;
+}
+.form-checkboxes {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  padding-inline: 1rem;
+}
+
+.form-checkboxes .form-check {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.form-checkboxes .form-check i {
+  font-size: 13px;
+}
+.form-checkboxes .form-check i.star {
+  color: var(--color-amber-400);
+}
+.form-checkboxes .form-check i.heartbeat {
+  color: var(--color-rose-500);
+}
+
+#addContactModal .modal-footer {
+  border-top: none;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-inline: 1rem;
+}
+
+#addContactModal .btn-primary {
+  background-image: var(--main-color);
+  border: none;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  width: 47%;
+  padding: 10px;
+  transition: all 0.1s linear;
+  color: white;
+}
+#addContactModal .btn-primary:hover {
+  box-shadow: 0 5px 20px 0px oklch(60.056% 0.24259 293.89 / 0.27);
+}
+
+#addContactModal .btn-secondary {
+  border-radius: 0.8rem;
+  border: none;
+  width: 47%;
+  padding: 10px;
+  color: black;
+  background-color: #bdc3ca34;
+  transition: all 0.1s linear;
+}
+#addContactModal .btn-secondary:hover {
+  background-color: #bdc3ca6e;
+}
