@@ -21,14 +21,8 @@ let photoPreview = document.querySelector(".contact-photo-preview");
 let selectedPhoto = "";
 
 let index;
-let contacts;
-if (localStorage.getItem("contacts") == null) {
-  contacts = [];
-} else {
-  contacts = JSON.parse(localStorage.getItem("contacts"));
-  displayContacts(contacts);
-}
-
+let contacts = JSON.parse(localStorage.getItem("contacts")) || [];
+displayContacts(contacts);
 photoInput.addEventListener("change", () => {
   let file = photoInput.files[0];
   if (file) {
